@@ -1,42 +1,22 @@
-# Fonctionnalités implémentées
+# Inscryption
 
-## Information importante
+Cette application imite le jeu vidéo **Inscryption**.
+
+## Installation
+
+Après avoir copié le dépôt Git, assurez
 
 Nous utilisons la version **java 25 SDK** de Intellij Idea.
 
 Certaines fonctionnalités risquent de ne pas marcher si on n'utilise pas cette version de l'IDE.
 
-## Tests fonctionnels
-
-- [x] l'attaque d'une carte,
-- [x] l'attaque des toutes les cartes à la fin d'un tour,
-- [x] les pouvoirs,
-- [x] le mécanisme de la pierre de sacrifice,
-- [x] la mise à jour du score,
-- [x] le placement des cartes sur le plateau
-- [x] le fait de piocher une carte,
-- [x] la mise en place d'une partie (plateau et pioches)
-- [x] le fait de gagner ou perdre une partie
-- [x] l'ajout de nouvelles cartes dans la pioche à la fin de la deuxième partie
-- [ ] le fait de gagner ou perdre le jeu
-
 Etant donné que certaines méthodes de notre code utilisent des scanner pour enregistrer l'input du joueur, nous ne pouvions pas simplement les implémenter dans les tests sans ajustements.
 
 Ainsi, pour les tests de gagner ou de perdre une partie, ou encore pour ceux liés à la pierre de sacrifice, nous avons dû réaliser ces fonctionnalités manuellement. Elle risquent ainsi de ne pas être entièrement identiques à leur exécution dans une vrai partie, mais nous avons fait au mieux pour s'en rapprocher le plus possible.
 
-En revanche, le test nécessitant de gagner ou perdre le jeu nécessite de simuler entièrement un jeu d'Inscryption, ce qui serait trop compliqué et long à faire, étant donné que nous utilisons des scanner pour recevoir les entrées du joueur. Nous avons donc décidé ne pas faire ce test. 
-
-Cependant, nous avons essayé de faire tous les autres comme vous pourrez le remarquer, notamment la simulatoin d'un tour complet, ce qui était une alternative proposée au cas où nous ne parviendrons justement pas de compléter ces tests de simulation complète du jeu. 
-
 N'hésitez pas à jeter un oeil au code lié à ces différentes parties pour vous faire une idée de nos implémentation dans le code.
 
-
-Ainsi, toutes les mécaniques demandées ont été implémentées dans notre application.
-
 ---
-# Inscryption
-
-On souhaite développer une application imitant **le jeu Inscryption**.
 
 _Vous vous retrouvez dans une cabane, perdu en pleine forêt. Dans l'obscurité, attablé face à vous se dresse un adversaire aux yeux inquiétants qui vous défie à un étrange jeu de cartes..._ 
 
@@ -149,7 +129,7 @@ Actions possibles:
 
 $ placer 2 B1
 ```
-Il n'est pas nécessaire de reproduire le visuel tel quel mais toutes les informations doivent être présentes.
+
 
 
 ## Phase 2
@@ -201,40 +181,6 @@ A la fin de la deuxième partie, après avoir choisi une nouvelle carte. Le joue
 
 
 
-## Organisation
-
-- Travail en **binôme** au sein d'un même groupe de TP
-- Le travail doit être réalisé sur un fork du projet dans le groupe <nom_etudiant_1>-<nom_etudiant_2> que vous aurez créé
-- Durée : 5 semaines
-- Nombre de séances :
-   - 8h encadrées en groupe de TD
-   - 12h encadrées, en groupe TP
-   - 8h tutorées, en promo complète
-   - travail non-encadré (SAé libre)
-- Sujet dévoilé en deux phases :
-  - Phase 1 dévoilée **Lundi 4 mai** sur les deux premières semaines
-  - Phase 2 dévoilée le **Lundi 25 mai**
-
-## Calendrier
-- Lundi **4 mai** : phase 1 dévoilée
-- Mardi **12 mai** : début des séances de TPs dédiées au projet
-- Lundi **25 mai** : début de la phase 2
-- Mercredi **10 Juin** à 12h30 : rendu final
-- De Jeudi **11 Juin** à Vendredi **12 Juin** : soutenances
-
-De plus, il y aura un rendu hebdomadaire avant chaque **Dimanche, 23h59** (les 17/05, 24/05, 31/05, 7/06 ).
-
-
-
-## Rendus hebdomadaires
-
-Votre projet doit être un fork de ce dépôt dans un groupe ayant pour nom `<nom_etudiant_1>-<nom_etudiant_2>`.
-Votre enseignant en TP et le responsable du module doivent être ajoutés comme Reporter à votre projet.
-
-Vous devez effectuer un rendu par semaine au plus tard le dimanche soir à minuit : la régularité des rendus sera prise en compte dans l'évaluation.
-Un rendu est une branche qui a pour nom `rendu<numéro-rendu>`.
-Le dernier rendu sera évalué en tant que rendu final.
-
 Chaque rendu doit contenir :
 
 - un programme qui compile dont les sources sont dans le répertoire `src/`,
@@ -260,39 +206,7 @@ La structure du dépôt git doit être la suivante :
 ```
 
 
-## Quelques consignes
+## Contributeurs
 
-### Les tests
-Afin de démontrer le bon fonctionnement de votre application, vous devrez écrire des tests.
-Vous testerez en particulier : 
-- l'attaque d'une carte,
-- l'attaque des toutes les cartes à la fin d'un tour,
-- les pouvoirs,
-- le mécanisme de la pierre de sacrifice,
-- la mise à jour du score,
-- le placement des cartes sur le plateau
-- le fait de piocher une carte,
-- la mise en place d'une partie (plateau et pioches)
-- le fait de gagner ou perdre une partie
-- l'ajout de nouvelles cartes dans la pioche à la fin de la deuxième partie
-- le fait de gagner ou perdre le jeu
-
-### Gestion des erreurs
-Vous devez prévoir des saisies utilisateurs incorrectes.
-- le format des saisies doit être clairement indiqué dans votre interface
-- si une saisie est incorrecte, elle doit être redemandée à l'utilisateur
-- dans ce dernier cas, il doit être indiqué en quoi la saisie est invalide
-
-### Qualité du code
-Veillez :
-- à respecter les [P21 Guidelines](https://git.unistra.fr/p21/p21/-/blob/main/guidelines.pdf?ref_type=heads)
-- à la bonne conception du code : il doit être lisible et facile à corriger, à réutiliser, à modifier et à étendre.
-
-
-## Quelques conseils
-
-- N'essayez pas d'implémenter toutes les fonctionnalités en une seule fois. Commencez par un programme simple mais fonctionnel et intégrez progressivement les fonctionnalités.
-- Il s'agit d'une version très simplifiée d'Inscryption. Il peut être tentant d'améliorer le projet et d'intégrer beaucoup de fonctionnalités et d'y cacher des énigmes. Cependant, cela ne vous permettra pas d'augmenter votre note. Ne négligez pas le projet de base ni les projets des autres modules. Vous aurez tout le loisir d'améliorer le projet durant votre été.
-- Faites des commits réguliers sur vos branches de travail.
-- Concevez votre code de façon à ce qu'il soit facile à modifier et à étendre avec de nouvelles fonctionnalités, notamment en prévision de la phase 2.
-- La qualité de la conception et du code produit est plus importante que le nombre de fonctionnalités intégrées.
+- David
+- EthanAymeric
