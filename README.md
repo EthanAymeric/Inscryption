@@ -4,24 +4,18 @@ Cette application imite le jeu vidéo **Inscryption**.
 
 ## Installation
 
-Après avoir copié le dépôt Git, assurez
+Après avoir copié le dépôt Git, assurez-vous d'utiliser la version **java 25 SDK** de Intellij Idea.
 
-Nous utilisons la version **java 25 SDK** de Intellij Idea.
-
-Certaines fonctionnalités risquent de ne pas marcher si on n'utilise pas cette version de l'IDE.
-
-Etant donné que certaines méthodes de notre code utilisent des scanner pour enregistrer l'input du joueur, nous ne pouvions pas simplement les implémenter dans les tests sans ajustements.
-
-Ainsi, pour les tests de gagner ou de perdre une partie, ou encore pour ceux liés à la pierre de sacrifice, nous avons dû réaliser ces fonctionnalités manuellement. Elle risquent ainsi de ne pas être entièrement identiques à leur exécution dans une vrai partie, mais nous avons fait au mieux pour s'en rapprocher le plus possible.
-
-N'hésitez pas à jeter un oeil au code lié à ces différentes parties pour vous faire une idée de nos implémentation dans le code.
+Certaines fonctionnalités risquent de ne pas marcher si nous n'utilisons pas cette version de l'IDE.
 
 ---
 
-_Vous vous retrouvez dans une cabane, perdu en pleine forêt. Dans l'obscurité, attablé face à vous se dresse un adversaire aux yeux inquiétants qui vous défie à un étrange jeu de cartes..._ 
+## Le jeu de cartes
+### But du jeu 
+Le joueur joue contre un adversaire
+A la gauche du joueur, se trouve une balance symbolisant l'écart de score avec son adversaire. Le premier joueur qui atteint un écart de 5 points en sa faveur remporte la partie. 
 
-## Le jeu de cartes (Phase 1)
-- A votre gauche, se trouve une balance symbolisant l'écart de score avec votre adversaire. Le premier joueur qui atteint un écart de 5 points en sa faveur remporte la partie. 
+### Emplacement des différents éléments de jeu
 - Face à vous, se trouve un plateau constitué de deux lignes de quatre emplacements de cartes. Vous ne pouvez placer des cartes que sur la ligne du bas, votre adversaire uniquement sur la ligne du haut.
 - A votre droite, vous disposez d'une pioche. Vous commencez avec 4 cartes en mains et vous pouvez piocher une carte par tour.
 
