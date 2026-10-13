@@ -173,34 +173,6 @@ Porc-épic | 1 | 2| 1 | 0 | Non | Piques pointues
 A la fin de la deuxième partie, après avoir choisi une nouvelle carte. Le joueur doit sacrifier une carte, il récupère alors son pouvoir (si la carte en possède) et peut l'ajouter à une autre carte animal.
 
 
-
-
-Chaque rendu doit contenir :
-
-- un programme qui compile dont les sources sont dans le répertoire `src/`,
-- un diagramme de classes à jour placé dans le répertoire `uml/` ayant pour nom `semaine<numero>.puml`,
-
-La structure du dépôt git doit être la suivante :
-```
-├── README.md
-├── .gitignore
-├── deps/
-    ├── hamcrest-core-1.3.jar
-    ├── junit-4.13.1.jar
-├── out/
-    ├── .gitkeep
-├── src/
-    ├── Main.java
-    ├── ...
-├── tests/
-    ├── ...
-├── uml/
-    ├── semaine1.puml
-    ├──...
-```
-
-
-## Contributeurs
-
-- David
-- EthanAymeric
+### Contributeurs
+- [EthanAymeric](https://github.com/EthanAymeric)
+- [tuaillon](https://github.com/tuaillon)
