@@ -6,7 +6,8 @@ Cette application imite le jeu vidéo **Inscryption**.
 
 Après avoir copié le dépôt Git, assurez-vous d'utiliser la version **java 25 SDK** de Intellij Idea.
 
-Certaines fonctionnalités risquent de ne pas marcher si nous n'utilisons pas cette version de l'IDE.
+Certaines fonctionnalités risquent de ne pas marcher si nous n'utilisons pas cette version de l'IDE. 
+Merci de bien prendre en compte ces informations si vous essayer de lancer le jeu de votre côté.
 
 ---
 
@@ -123,10 +124,6 @@ Actions possibles:
 
 $ placer 2 B1
 ```
-
-
-
-## Phase 2
 
 ### Pouvoirs 
 - Nombreuses vies : reste vivant sur le plateau lorsqu'elle est sacrifiée
